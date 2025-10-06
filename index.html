@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Menu Burger project</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<section id="mainScreen">
+		
+		<!-- Input form where user selects the number of menu items -->
+		<div id="inputFormMain" class="content-center position-padding">
+		
+			<h1>Generate a responsive menu</h1>
+			
+			<form>
+				<label for="menuCount">How many menu elements? (3-8)?</label>
+				<input id="menuCount" type="number" min="3" max="8" value="5">
+				<button id="generateBtn" type="button">Generate menu</button>
+			</form>
+			
+		</div>
+		
+		<!-- Dynamic menu will be created here -->
+		<nav id="mainMenu" class="hidden" aria-label="Main navigation" role="navigation">
+			<ul></ul>
+		</nav>
+		
+		<!-- Calculator to demonstrate process asynchrony -->
+		<div id="inputFormBurger" class="content-center position-absolute hidden">
+		
+			<h1>Do you want to<br>calculate numbers?</h1>
+			
+			<form>
+				<input id="number1" type="number" value="0">
+				<select id="operation" name="operation">
+					<option value="add">+</option>
+					<option value="subtract">-</option>
+					<option value="multiply">*</option>					
+					<option value="divide">/</option>
+
+				</select>
+				<input id="number2" type="number" value="0">
+				<button id="calculateBtn" type="button">Calculate =</button>				
+				<div id="result">Result: </div>	
+
+			</form>
+			
+		</div>
+		
+		<!-- 'Burger' menu for when main menus are collapsed -->
+		<div id="burgerMenuWrap" class="hidden">
+		
+			<h1>Press 'burger' <br> menu -></h1>
+			
+			<div id="burgerMenu" aria-label="Toggle navigation menu" role="button">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			
+			<!-- Expanded menu that opens / closed when 'burger' is clicked / unclicked -->
+			<div id="burgerExpandMenu" class="visible-no" aria-label="Burger navigation" role="navigation"></div>
+		</div>
+			
+	</section>
+
+	<!-- The library will be available globally as PositionTools
+	const baseElement = document.getElementById('base');
+	const tooltip = document.getElementById('tooltip');
+    
+	PositionTools.positionBottom(baseElement, tooltip, 10); -->
+	<script src="position-tools.js" > </script>
+	
+	<script src="main.js" > </script>
+</body>
+</html>
