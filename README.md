@@ -50,7 +50,7 @@ class ElementError extends Error {
 - manageBurgerExtendedMenu() - Toggles burger menu visibility
 
 ## Dependencies
-This project uses **[Position Tools Library](https://github.com/your-username/position-tools)** for precise element positioning.
+This project uses **[Position Tools Library](https://github.com/irenavilde/PositionTools-/)** for precise element positioning.
 
 ```html
 <!-- Include from local project files -->
