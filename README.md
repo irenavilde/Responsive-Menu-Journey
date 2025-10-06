@@ -76,6 +76,9 @@ This project uses **[Position Tools Library](https://github.com/irenavilde/Posit
 - Input validation and error messages
 - Demonstrates non-blocking async behavior
 
+## Background Image
+The background image is sourced from free stock photography resources and is used for educational/demonstration purposes in this project.
+
 # Demo
 [Include your demo video link here]
 The demo shows the complete workflow from menu generation through all adaptive stages to burger menu conversion, with the calculator functioning throughout the process.
